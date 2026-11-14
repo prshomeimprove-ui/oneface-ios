@@ -1,0 +1,14 @@
+{
+  "appId": "com.onefaceapp.app",
+  "appName": "One Face",
+  "webDir": "www",
+  "ios": {
+    "backgroundColor": "#FAF2ED",
+    "contentInset": "never"
+  },
+  "plugins": {
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    }
+  }
+}

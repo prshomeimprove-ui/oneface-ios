@@ -1,0 +1,1 @@
+window.ONEFACE_CONFIG={SUPABASE_URL:'https://sfogetrfyfazhvtetzol.supabase.co',SUPABASE_ANON_KEY:'sb_publishable_fLt7e9uJrLfxOGQfayt8Eg_MSlF3pXV',VAPID_PUBLIC:'BCVWI7TG5DhXGHfmOamxLjRjByfGsaaOXjvBJ5NAStkk0GKrG-H9lY_xoDe8UXZexn-KpzmMIrJNAd6g0lD0tcw'};

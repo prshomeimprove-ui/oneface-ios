@@ -1,0 +1,107 @@
+{
+ "name": "One Face",
+ "short_name": "One Face",
+ "start_url": "/app/?source=pwa",
+ "display": "standalone",
+ "background_color": "#FAF2ED",
+ "theme_color": "#FAF2ED",
+ "icons": [
+  {
+   "src": "icon2-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon2-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon2-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "id": "/app/",
+ "scope": "/app/",
+ "description": "Share moments, chat and call the people you love. One face. One place.",
+ "lang": "en",
+ "orientation": "portrait",
+ "categories": [
+  "social",
+  "communication"
+ ],
+ "shortcuts": [
+  {
+   "name": "Messages",
+   "short_name": "Chats",
+   "url": "/app/#/messages",
+   "icons": [
+    {
+     "src": "icon2-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "New post",
+   "short_name": "Post",
+   "url": "/app/#/compose",
+   "icons": [
+    {
+     "src": "icon2-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "People nearby",
+   "short_name": "Nearby",
+   "url": "/app/#/nearby",
+   "icons": [
+    {
+     "src": "icon2-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  }
+ ],
+ "screenshots": [
+  {
+   "src": "/img/store-home.jpg",
+   "sizes": "540x960",
+   "type": "image/jpeg",
+   "form_factor": "narrow",
+   "label": "Home feed"
+  },
+  {
+   "src": "/img/store-chat.jpg",
+   "sizes": "540x960",
+   "type": "image/jpeg",
+   "form_factor": "narrow",
+   "label": "Chats"
+  },
+  {
+   "src": "/img/store-friends.jpg",
+   "sizes": "540x960",
+   "type": "image/jpeg",
+   "form_factor": "narrow",
+   "label": "Friends"
+  },
+  {
+   "src": "/img/store-nearby.jpg",
+   "sizes": "540x960",
+   "type": "image/jpeg",
+   "form_factor": "narrow",
+   "label": "People nearby"
+  }
+ ],
+ "display_override": [
+  "standalone",
+  "minimal-ui"
+ ],
+ "prefer_related_applications": false
+}
