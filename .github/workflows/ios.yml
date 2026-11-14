@@ -28,7 +28,9 @@ jobs:
       - name: Save Apple key
         run: |
           mkdir -p ~/private_keys
-          printf '%s\n' "$ASC_KEY_P8" > ~/private_keys/AuthKey_${ASC_KEY_ID}.p8
+          BODY=$(printf '%s' "$ASC_KEY_P8" | sed -e 's/-----[A-Z ]*-----//g' | tr -d ' \r\n\t')
+          echo "key length: ${#BODY} (a good key is about 184)"
+          { echo '-----BEGIN PRIVATE KEY-----'; echo "$BODY" | fold -w 64; echo '-----END PRIVATE KEY-----'; } > ~/private_keys/AuthKey_${ASC_KEY_ID}.p8
       - name: Build
         run: |
           cd ios/App
