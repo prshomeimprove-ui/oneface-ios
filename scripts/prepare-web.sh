@@ -6,8 +6,9 @@ rm -f www/demo-reel.mp4
 cp resources/ios-native.js www/ios-native.js
 BASE='https://onefaceapp.com/app/'
 # inside the iPhone app the page address is not a web address, so links that get shared must point to the website
-for f in www/*.js; do sed -i "s#location\.origin+location\.pathname#'$BASE'#g" "$f"; done
+for f in www/*.js; do sed -i.bak "s#location\.origin+location\.pathname#'$BASE'#g" "$f"; done
 grep -q '</body>' www/index.html
-sed -i 's#</body>#<script src="ios-native.js"></script></body>#' www/index.html
+sed -i.bak 's#</body>#<script src="ios-native.js"></script></body>#' www/index.html
 grep -q 'ios-native.js' www/index.html
+rm -f www/*.bak
 echo "web ready: $(ls www | wc -l) files"
